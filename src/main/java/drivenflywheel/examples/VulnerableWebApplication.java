@@ -1,5 +1,6 @@
 package drivenflywheel.examples;
 
+import drivenflywheel.examples.annotations.security.guards.PathSanitizer;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.http.ResponseEntity;
@@ -46,6 +47,7 @@ public class VulnerableWebApplication {
 
 	}
 
+	@PathSanitizer
 	private String ensurePathIsSafe(String requiredBase, String filePath) {
 		Path normalizedBasePath = Paths.get(requiredBase).normalize().toAbsolutePath();
 		Path normalizedFilePath = Paths.get(filePath).normalize().toAbsolutePath();

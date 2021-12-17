@@ -1,0 +1,3 @@
+queries:
+  - uses: ./custom-queries/TaintedPath_Sanitized.ql
+

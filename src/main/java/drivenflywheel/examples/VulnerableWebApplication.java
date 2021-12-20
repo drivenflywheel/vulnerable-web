@@ -49,6 +49,11 @@ public class VulnerableWebApplication {
 
 	@PathSanitizer
 	private String ensurePathIsSafe(String requiredBase, String filePath) {
+		// probably an overly simplistic test
+		if (filePath.contains("..")) {
+			throw new IllegalArgumentException("filePath contains illegal character sequence \"..\"");
+		}
+
 		Path normalizedBasePath = Paths.get(requiredBase).normalize().toAbsolutePath();
 		Path normalizedFilePath = Paths.get(filePath).normalize().toAbsolutePath();
 

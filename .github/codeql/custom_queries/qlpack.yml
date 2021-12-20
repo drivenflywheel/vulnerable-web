@@ -1,4 +1,6 @@
 name: dfw-custom-queries
 version: 0.0.1
-libraryPathDependencies: codeql/java-all
+libraryPathDependencies:
+  - codeql/java-all
+  - codeql/suite-helpers
 

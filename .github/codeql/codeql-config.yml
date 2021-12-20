@@ -1,5 +1,3 @@
-# queries:
-#  - uses: ./.github/codeql/custom_queries/TaintedPath_Sanitized.ql
-packs:
-  - drivenflywheel/dfw-custom-queries
+queries:
+  - uses: ./.github/codeql/custom_queries/TaintedPath_Sanitized.ql
 

@@ -1,4 +1,4 @@
-name: drivenflywheel/dfw-custom-queries
+name: dfw-custom-queries
 version: 0.0.1
 libraryPathDependencies:
   - codeql/java-all

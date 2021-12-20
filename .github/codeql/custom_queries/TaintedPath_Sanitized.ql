@@ -20,7 +20,7 @@ import semmle.code.java.dataflow.FlowSources
 import semmle.code.java.security.PathCreation
 import DataFlow::PathGraph
 /* import TaintedPathCommon */
-import Security.CWE.CWE-22.TaintedPathCommon
+import Security.CWE.CWE_22.TaintedPathCommon
 
 class HasPathSanitizer extends DataFlow::BarrierGuard {
   HasPathSanitizer() {

@@ -1,0 +1,5 @@
+disable-default-queries: true
+
+queries:
+  - uses: ./.github/codeql/custom_queries/TaintedPath_Sanitized.ql
+

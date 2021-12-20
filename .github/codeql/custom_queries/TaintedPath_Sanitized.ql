@@ -6,7 +6,7 @@
  * @problem.severity error
  * @security-severity 7.5
  * @precision high
- * @id java/path-injection
+ * @id java/path-injection-unsanitized
  * @tags security
  *       external/cwe/cwe-022
  *       external/cwe/cwe-023
